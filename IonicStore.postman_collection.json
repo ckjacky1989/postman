@@ -642,7 +642,7 @@
 			"response": []
 		},
 		{
-			"name": "Search For An Non-existing Product",
+			"name": "Search For A Non-existing Product",
 			"event": [
 				{
 					"listen": "test",
@@ -653,7 +653,7 @@
 							"});\r",
 							"\r",
 							"let jsonData = pm.response.json();\r",
-							"pm.test(\"Search for an non-existing product returns empty array\", function () {\r",
+							"pm.test(\"Search for a non-existing product returns empty array\", function () {\r",
 							"    pm.expect(Array.isArray(jsonData)).to.be.true;\r",
 							"    pm.expect(jsonData.length).to.eql(0);\r",
 							"});"
@@ -734,7 +734,7 @@
 			"response": []
 		},
 		{
-			"name": "Update An Non-existing Product",
+			"name": "Update A Non-existing Product",
 			"event": [
 				{
 					"listen": "test",
@@ -744,7 +744,7 @@
 							"    pm.response.to.have.status(404);\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Update an non-existing product returns 'Product not found'\", function () {\r",
+							"pm.test(\"Update a non-existing product returns 'Product not found'\", function () {\r",
 							"    let jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.message).to.eql(\"Product not found\");\r",
 							"});"
@@ -782,7 +782,7 @@
 			"response": []
 		},
 		{
-			"name": "Delete An Non-existing Product",
+			"name": "Delete A Non-existing Product",
 			"event": [
 				{
 					"listen": "test",
@@ -792,7 +792,7 @@
 							"    pm.response.to.have.status(404);\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Delete an non-existing product returns 'Product not found'\", function () {\r",
+							"pm.test(\"Delete a non-existing product returns 'Product not found'\", function () {\r",
 							"    let jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.message).to.eql(\"Product not found\");\r",
 							"});"
